@@ -1,9 +1,9 @@
 # powercurvePlot
 
-> **This function now lives in the [`modelviz`](https://github.com/pablobernabeu/modelviz) package.**
+> **This function now lives in the [`statviz`](https://github.com/pablobernabeu/statviz) package.**
 
 Plotting power curves from the `simr` package. This standalone function has been
-generalised, renamed and folded into **modelviz**, a unified, CRAN-grade package
+generalised, renamed and folded into **statviz**, a unified, CRAN-grade package
 for visualising statistical models and data.
 
 The successor is **`power_curve_plot()`**, which:
@@ -13,13 +13,13 @@ The successor is **`power_curve_plot()`**, which:
 * drops the `Cairo` dependency, and
 * shares a consistent theme and palette with the rest of the package.
 
-## Use it via modelviz
+## Use it via statviz
 
 ```r
 # install.packages("remotes")
-remotes::install_github("pablobernabeu/modelviz")
+remotes::install_github("pablobernabeu/statviz")
 
-library(modelviz)
+library(statviz)
 
 pc <- data.frame(
   nlevels = seq(10, 60, by = 10),
@@ -30,8 +30,8 @@ pc <- data.frame(
 power_curve_plot(pc, x_lab = "Number of participants")
 ```
 
-See the [modelviz repository](https://github.com/pablobernabeu/modelviz) and
-`vignette("model-estimates", package = "modelviz")` for details.
+See the [statviz repository](https://github.com/pablobernabeu/statviz) and
+`vignette("model-estimates", package = "statviz")` for details.
 
 ---
 
