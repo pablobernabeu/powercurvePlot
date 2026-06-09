@@ -1,9 +1,9 @@
 # powercurvePlot
 
-> **This function now lives in the [`statviz`](https://github.com/pablobernabeu/statviz) package.**
+> **This function now lives in the [`depictr`](https://github.com/pablobernabeu/depictr) package.**
 
 Plotting power curves from the `simr` package. This standalone function has been
-generalised, renamed and folded into **statviz**, a unified, CRAN-grade package
+generalised, renamed and folded into **depictr**, a unified, CRAN-grade package
 for visualising statistical models and data.
 
 The successor is **`power_curve_plot()`**, which:
@@ -13,13 +13,13 @@ The successor is **`power_curve_plot()`**, which:
 * drops the `Cairo` dependency, and
 * shares a consistent theme and palette with the rest of the package.
 
-## Use it via statviz
+## Use it via depictr
 
 ```r
 # install.packages("remotes")
-remotes::install_github("pablobernabeu/statviz")
+remotes::install_github("pablobernabeu/depictr")
 
-library(statviz)
+library(depictr)
 
 pc <- data.frame(
   nlevels = seq(10, 60, by = 10),
@@ -30,8 +30,8 @@ pc <- data.frame(
 power_curve_plot(pc, x_lab = "Number of participants")
 ```
 
-See the [statviz repository](https://github.com/pablobernabeu/statviz) and
-`vignette("model-estimates", package = "statviz")` for details.
+See the [depictr repository](https://github.com/pablobernabeu/depictr) and
+`vignette("model-estimates", package = "depictr")` for details.
 
 ---
 
